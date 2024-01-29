@@ -293,15 +293,22 @@ h1, h2, h3, h4, h5, h6 {
     padding: 1.6rem;
 }
 
+ .app_button-more:checked ~.app__section-task-header__ul {
+        display: block;
+        text-align: right;
+        border-radius: 0.8rem;
+        border: 0.2rem solid var(--azul-royal, #144480);
+        background: var(--fundo-modal-2, #1B293B);
+    }
 
-.app__section-task-header__ul:hover,
+/*.app__section-task-header__ul:hover,
 .app_button-more:hover ~ .app__section-task-header__ul {
     display: block;
     text-align: right;
     border-radius: 0.8rem;
     border: 0.2rem solid var(--azul-royal, #144480);
     background: var(--fundo-modal-2, #1B293B);
-}
+} */
 
 .app__section-task-header__li {
     margin: 1rem 0;
@@ -338,19 +345,6 @@ h1, h2, h3, h4, h5, h6 {
     .app__section-banner-container {
         width: 48rem;
     }
-
-    .app_button-more:checked ~.app__section-task-header__ul {
-        display: block;
-        text-align: right;
-        border-radius: 0.8rem;
-        border: 0.2rem solid var(--azul-royal, #144480);
-        background: var(--fundo-modal-2, #1B293B);
-    }
-    
-    .app__section-task-header__ul:hover,
-    .app_button-more:hover ~ .app__section-task-header__ul {
-    display: none;
-    }
 }
 
 /* Para Celulares */
@@ -369,19 +363,6 @@ h1, h2, h3, h4, h5, h6 {
 
     .app__section-active-task {
         gap: 2rem;
-    }
-
-    .app_button-more:checked ~.app__section-task-header__ul {
-        display: block;
-        text-align: right;
-        border-radius: 0.8rem;
-        border: 0.2rem solid var(--azul-royal, #144480);
-        background: var(--fundo-modal-2, #1B293B);
-    }
-
-    .app__section-task-header__ul:hover,
-    .app_button-more:hover ~ .app__section-task-header__ul {
-    display: none;
     }
     
 }
